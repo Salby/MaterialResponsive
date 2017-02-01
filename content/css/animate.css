@@ -1,0 +1,14 @@
+/*THIS FILE CONTAINS ALL ANIMATIONS USING CSS3*/
+
+@keyframes mobileNav {
+  0% {
+    opacity: 0;
+    width: 0vw;
+    height: 0px;
+  }
+  100% {
+    opacity: 1;
+    width: 50vw;
+    height: 129px;
+  }
+}
