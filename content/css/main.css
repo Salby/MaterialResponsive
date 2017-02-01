@@ -67,7 +67,7 @@ body {
   }
   .card-row {
     width: 100%;
-    margin: none;
+    margin-left: 0%;
   }
 }
 
