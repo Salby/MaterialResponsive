@@ -25,8 +25,9 @@
         <header>
           <nav>
             <ul>
-              <li class="link"><a class="link-content" href="#">HOME</a></li>
+              <li class="link"><a class="link-content active" href="#">HOME</a></li>
               <li class="link"><a class="link-content" href="#">ABOUT</a></li>
+              <li class="link"><a class="link-content" href="#">CASES</a></li>
               <div class="menu">
                 <button class="button-menu"><i class="material-icons">menu</i></button>
                 <div class="menu-content">
@@ -48,12 +49,59 @@
 
       </section>
 
+      <section class="row-wrapper">
+        <article class="card-row" id="rowLeft">
+          <img src="http://placehold.it/500x250">
+          <h3>HEADER</h3>
+          <button class="button-flat floatRight">LÆS MERE</button>
+        </article>
+        <article class="card-row" id="rowMiddle">
+          <img src="http://placehold.it/500x250">
+          <h3>HEADER</h3>
+          <button class="button-flat floatRight">LÆS MERE</button>
+        </article>
+        <article class="card-row" id="rowRight">
+          <img src="http://placehold.it/500x250">
+          <h3>HEADER</h3>
+          <button class="button-flat floatRight">LÆS MERE</button>
+        </article>
+      </section>
+
     </main>
 
     <script>
-      //jQuery time
+      //MOBILE MENU RIPPLE
       var parent, ink, d, x, y;
       $(".menu-link-content").click(function(e){
+  	  parent = $(this).parent();
+  	  //create .ink element if it doesn't exist
+  	  if(parent.find(".ink").length == 0)
+  		parent.prepend("<span class='ink'></span>");
+
+  	  ink = parent.find(".ink");
+  	  //incase of quick double clicks stop the previous animation
+  	  ink.removeClass("animate");
+
+  	  //set size of .ink
+  	  if(!ink.height() && !ink.width())
+  	  {
+  		//use parent's width or height whichever is larger for the diameter to make a circle which can cover the entire element.
+  		d = Math.max(parent.outerWidth(), parent.outerHeight());
+  		ink.css({height: d, width: d});
+  	  }
+
+  	  //get click coordinates
+  	  //logic = click coordinates relative to page - parent's position relative to page - half of self height/width to make it controllable from the center;
+  	  x = e.pageX - parent.offset().left - ink.width()/2;
+  	  y = e.pageY - parent.offset().top - ink.height()/2;
+
+  	  //set the position and add class .animate
+  	  ink.css({top: y+'px', left: x+'px'}).addClass("animate");
+      })
+
+      //DESKTOP RIPPLE
+      var parent, ink, d, x, y;
+      $(".link-content").click(function(e){
   	  parent = $(this).parent();
   	  //create .ink element if it doesn't exist
   	  if(parent.find(".ink").length == 0)

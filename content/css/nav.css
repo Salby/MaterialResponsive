@@ -12,16 +12,19 @@ nav ul {
   list-style: none;
   padding: 1.4rem;
   box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+  overflow: hidden;
 }
 
 nav ul li {
   display: inline;
   overflow: hidden;
 }
-
+.link {
+  position: relative;
+}
 .link-content {
   background-color: #E91E63;
-  color: #ffffff;
+  color: #F8BBD0;
   padding: 1.3rem;
   border-bottom: solid #E91E63 2px;
   transition: all 0.3s ease 0s;
@@ -32,11 +35,21 @@ nav ul li {
   border-bottom: solid #ffffff 2px;
 }
 
+/*ACTIVE LINK*/
+
+.active {
+  border-bottom: solid #ffffff 2px;
+  color: #ffffff;
+}
+
 /*MOBILE MENU STYLING*/
 
 @media only screen and (max-width: 420px) {
   .link {
     display: none;
+  }
+  nav ul {
+    overflow: visible;
   }
 }
 @media only screen and (min-width: 421px) {
@@ -106,4 +119,5 @@ nav ul li {
   font-weight: 300;
   font-size: 1em;
   padding: 0px;
+  overflow: hidden;
 }
