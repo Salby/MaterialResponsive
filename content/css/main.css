@@ -3,7 +3,7 @@
 body {
   margin: 0px;
   background-color: #eeeeee;
-  background-image: url(/home/sander/HTML/SKETCHES/MaterialResponsive/content/images/background.jpeg);
+  background-image: url(../images/background.jpeg);
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
