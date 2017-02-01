@@ -92,7 +92,7 @@ h3 {
 
 .button-flat {
   cursor: pointer;
-  background-color: #rgba(0,0,0,0);
+  background-color: rgba(0,0,0,0);
   color: #E91E63;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
