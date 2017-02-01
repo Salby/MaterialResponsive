@@ -108,6 +108,9 @@ h3 {
 .button-flat:hover {
   background-color: rgba(0,0,0,0.05);
 }
+.button-flat:focus {
+  outline: none;
+}
 
 .button-raised {
   cursor: pointer;
@@ -126,6 +129,9 @@ h3 {
 .button-raised:hover {
   box-shadow: 0 4px 12px 0 rgba(0,0,0,0.2);
 }
+.button-raised:focus {
+  outline: none;
+}
 
 .button-action {
   cursor: pointer;
@@ -143,6 +149,9 @@ h3 {
 }
 .button-action:hover {
   box-shadow: 0 4px 12px 0 rgba(0,0,0,0.2);
+}
+.button-action:focus {
+  outline: none;
 }
 
 /*IMAGE STYLES*/
