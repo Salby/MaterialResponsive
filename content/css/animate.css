@@ -5,10 +5,12 @@
     opacity: 0;
     width: 0vw;
     height: 0px;
+    transform: translateX(-20%);
   }
   100% {
     opacity: 1;
     width: 50vw;
     height: 129px;
+    transform: translateX(0%);
   }
 }
