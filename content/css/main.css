@@ -81,9 +81,10 @@ h1 {
 
 .button-action {
   cursor: pointer;
-  background-color: #E91E63;
+  background-color: #CDDC39;
   color: #ffffff;
-  font-size: 1em;
+  font-size: 2em;
+  width: 2.2em;
   padding: 0.5em;
   margin: 0.5em;
   border: 0px;
