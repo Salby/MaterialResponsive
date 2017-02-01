@@ -30,3 +30,23 @@ nav ul li a {
 nav ul li a:hover {
   border-bottom: solid #ffffff 2px;
 }
+
+/*MOBILE MENU STYLING*/
+
+@media only screen and (max-width: 420px) {
+  nav ul li {
+    display: none;
+  }
+}
+
+.button-menu {
+  cursor: pointer;
+  padding: 0em;
+  background-color: #E91E63;
+  color: #ffffff;
+  border-radius: 100%;
+  border: none;
+}
+.button-menu: active {
+  background-color: rgba(255,255,255,0.1);
+}
