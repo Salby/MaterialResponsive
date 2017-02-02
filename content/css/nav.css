@@ -124,7 +124,7 @@ nav ul li {
 }
 .modalList li a i {
   color: #757575;
-  padding: 0 1em;
-  font-size: 1em;
+  padding: 0 10px;
+  font-size: 14px;
   transform: scale(1.5);
 }
