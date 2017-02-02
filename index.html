@@ -21,6 +21,20 @@
 
     <main>
 
+      <div id="openModal" class="modalDialog">
+        <div>
+          <header class="modalAction">
+            <a href="#close" title="Close" class="close"><i class="material-icons">arrow_back</i></a>
+            <h4>Material Responsive Design</h4>
+          </header>
+          <ul class="modalList">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Cases</a></li>
+          </ul>
+	      </div>
+      </div>
+
       <section class="card-main">
 
         <header>
@@ -29,7 +43,8 @@
               <li class="link"><a class="link-content active" href="#">HOME</a></li>
               <li class="link"><a class="link-content" href="#">ABOUT</a></li>
               <li class="link"><a class="link-content" href="#">CASES</a></li>
-              <div class="menu">
+              <a href="#openModal" class="button-menu"><i class="material-icons">menu</i></a>
+              <!--<div class="menu">
                 <button class="button-menu"><i class="material-icons">menu</i></button>
                 <div class="menu-content">
                   <ul class="menu-list">
@@ -38,7 +53,7 @@
                     <li class="menu-link"><a class="menu-link-content" href="#">CASES</a></li>
                   </ul>
                 </div>
-              </div>
+              </div>-->
             </ul>
           </nav>
         </header>
@@ -91,7 +106,7 @@
 
       //MOBILE MENU RIPPLE
       var parent, ink, d, x, y;
-      $(".menu-link-content").click(function(e){
+      $(".modalList li a").click(function(e){
   	  parent = $(this).parent();
   	  //create .ink element if it doesn't exist
   	  if(parent.find(".ink").length == 0)

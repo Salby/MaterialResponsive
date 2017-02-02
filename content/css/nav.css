@@ -108,3 +108,75 @@ nav ul li {
   padding: 0px;
   overflow: hidden;
 }
+
+/*EXPERIMENTAL MODAL*/
+
+
+
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.5);
+	z-index: 99999;
+	opacity:0;
+	pointer-events: none;
+}
+
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+  background-color: #ffffff;
+  width: 80vw;
+  height: 100vh;
+  animation: drawerIn 0.6s;
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+}
+.modalAction {
+  width: 100%;
+  height: 20vh;
+  background-color: #E91E63;
+  margin-bottom: 1em;
+}
+.modalAction h4 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  color: #ffffff;
+  padding: 0.5em;
+}
+.modalAction i {
+  color: #ffffff;
+  font-size: 2em;
+  padding: 0.5em;
+  border-radius: 100%;
+}
+.modalAction i:active {
+  background-color: rgba(255,255,255,0.2);
+}
+.modalList {
+  margin: 0;
+  padding: 0;
+}
+.modalList li {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.modalList li a {
+  width: 100%;
+  text-decoration: none;
+  color: #000000;
+  padding: 1em;
+  position: relative;
+  display: block;
+  transition: all 0.3s ease 0s;
+}
+.modalList li a:hover {
+  background-color: rgba(0,0,0,0.05);
+}
