@@ -116,7 +116,7 @@ h3 {
   transition: all 0.6s ease 0s;
 }
 .button-raised:hover {
-  box-shadow: 0 4px 12px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 20px 0 rgba(0,0,0,0.2);
 }
 .button-raised:focus {
   outline: none;
@@ -137,7 +137,7 @@ h3 {
   animation: scaleIn 0.4s;
 }
 .button-action:hover {
-  box-shadow: 0 4px 12px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 20px 0 rgba(0,0,0,0.2);
 }
 .button-action:focus {
   outline: none;
