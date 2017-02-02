@@ -44,6 +44,14 @@ nav ul li {
 
 /*NAV DRAWER*/
 
+.button-menu {
+  color: #ffffff;
+  border-radius: 100%;
+}
+.button-menu:active {
+  background-color: rgba(255,255,255,0.2);
+}
+
 .modalDialog {
 	position: fixed;
 	font-family: Arial, Helvetica, sans-serif;
@@ -97,6 +105,7 @@ nav ul li {
   padding-bottom: 1em;
 }
 .modalList li {
+  cursor: pointer;
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -110,6 +119,12 @@ nav ul li {
   display: block;
   transition: all 0.3s ease 0s;
 }
-.modalList li a:hover {
+.modalList li a:active {
   background-color: rgba(0,0,0,0.05);
+}
+.modalList li a i {
+  color: #757575;
+  padding: 0 1em;
+  font-size: 1em;
+  transform: scale(1.5);
 }
