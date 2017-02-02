@@ -1,0 +1,45 @@
+/*THIS FILE CONTAINS ALL MEDIA QUERIES FOR THE SITE*/
+
+/*NAVBAR QUERIES*/
+
+@media only screen and (max-width: 420px) {
+  .link {
+    display: none;
+  }
+  nav ul {
+    overflow: visible;
+  }
+}
+@media only screen and (min-width: 421px) {
+  .button-menu {
+    display: none;
+  }
+}
+
+/*CARD QUERIES*/
+
+@media only screen and (max-width: 1200px) {
+  .card-main,
+  .card-basic {
+    width: 100%;
+    margin: none;
+  }
+  .card-row {
+    width: 100%;
+    margin-left: 0%;
+  }
+}
+
+/*TEXT QUERIES*/
+
+@media only screen and (max-width: 420px) {
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  h3 {
+    font-size: 1.2em;
+  }
+}

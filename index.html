@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="content/css/main.css">
     <link rel="stylesheet" href="content/css/nav.css">
     <link rel="stylesheet" href="content/css/animate.css">
-    <link rel="stylesheet" href="content/css/grid.css">
+    <link rel="stylesheet" href="content/css/responsive.css">
     <!--FONTS-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
     <!--JQUERY-->
@@ -48,29 +48,47 @@
         <button class="button-raised">BUTTON</button>
         <button class="button-action"><i class="material-icons">add</i></button>
 
+        <button class="button-action floatRight" id="rowSwitch"><i class="material-icons" id="rowSwitchIcon">open_in_browser</i></a>
+
       </section>
 
       <section class="row-wrapper">
         <article class="card-row" id="rowLeft">
-          <img src="http://placehold.it/500x250">
+          <img src="http://placehold.it/500x250" id="imgLeft">
           <h3>HEADER</h3>
-          <button class="button-flat floatRight">LÆS MERE</button>
+          <button class="button-flat floatRight" id="buttonLeft">LÆS MERE</button>
         </article>
         <article class="card-row" id="rowMiddle">
-          <img src="http://placehold.it/500x250">
+          <img src="http://placehold.it/500x250" id="imgMiddle">
           <h3>HEADER</h3>
-          <button class="button-flat floatRight">LÆS MERE</button>
+          <button class="button-flat floatRight" id="buttonMiddle">LÆS MERE</button>
         </article>
         <article class="card-row" id="rowRight">
-          <img src="http://placehold.it/500x250">
+          <img src="http://placehold.it/500x250" id="imgRight">
           <h3>HEADER</h3>
-          <button class="button-flat floatRight">LÆS MERE</button>
+          <button class="button-flat floatRight" id="buttonRight">LÆS MERE</button>
         </article>
       </section>
 
     </main>
 
     <script>
+
+      //ROW TOGGLE JQUERY
+      $(document).ready(function(){
+        $("#rowSwitch").click(function(){
+          $("#rowLeft").animate({
+            height: 'toggle',
+          });
+          $("#rowMiddle").animate({
+            height: 'toggle',
+          });
+          $("#rowRight").animate({
+            height: 'toggle',
+          });
+        });
+      });
+
       //MOBILE MENU RIPPLE
       var parent, ink, d, x, y;
       $(".menu-link-content").click(function(e){
