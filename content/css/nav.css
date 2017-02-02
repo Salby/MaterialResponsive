@@ -133,7 +133,7 @@ nav ul li {
 
 .modalDialog > div {
   background-color: #ffffff;
-  width: 80vw;
+  width: 0vw;
   height: 100vh;
   animation: drawerIn 0.6s;
   box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
@@ -162,6 +162,8 @@ nav ul li {
 .modalList {
   margin: 0;
   padding: 0;
+  border-bottom: solid #BDBDBD 1px;
+  padding-bottom: 1em;
 }
 .modalList li {
   width: 100%;

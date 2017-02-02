@@ -22,9 +22,9 @@
     <main>
 
       <div id="openModal" class="modalDialog">
-        <div>
+        <div id="modalContent">
           <header class="modalAction">
-            <a href="#close" title="Close" class="close"><i class="material-icons">arrow_back</i></a>
+            <a href="#close" title="Close" class="close" id="closeDrawer"><i class="material-icons">arrow_back</i></a>
             <h4>Material Responsive Design</h4>
           </header>
           <ul class="modalList">
@@ -43,17 +43,7 @@
               <li class="link"><a class="link-content active" href="#">HOME</a></li>
               <li class="link"><a class="link-content" href="#">ABOUT</a></li>
               <li class="link"><a class="link-content" href="#">CASES</a></li>
-              <a href="#openModal" class="button-menu"><i class="material-icons">menu</i></a>
-              <!--<div class="menu">
-                <button class="button-menu"><i class="material-icons">menu</i></button>
-                <div class="menu-content">
-                  <ul class="menu-list">
-                    <li class="menu-link"><a class="menu-link-content" href="#">HJEM</a></li>
-                    <li class="menu-link"><a class="menu-link-content" href="#">ABOUT</a></li>
-                    <li class="menu-link"><a class="menu-link-content" href="#">CASES</a></li>
-                  </ul>
-                </div>
-              </div>-->
+              <a href="#openModal" class="button-menu" id="openDrawer"><i class="material-icons">menu</i></a>
             </ul>
           </nav>
         </header>
@@ -88,6 +78,16 @@
     </main>
 
     <script>
+
+      //DRAWER ANIMATIONS
+      $(document).ready(function(){
+        $("#openDrawer").click(function(){
+          $("#modalContent").animate({width: '80vw'}, 300);
+        });
+        $("#closeDrawer").click(function(){
+          $("#modalContent").animate({width: '0vw'}, 300);
+        });
+      });
 
       //ROW TOGGLE JQUERY
       $(document).ready(function(){
