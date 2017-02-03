@@ -2,7 +2,7 @@
 
 /*NAVBAR QUERIES*/
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 480px) {
   .link {
     display: none;
   }
@@ -10,7 +10,7 @@
     overflow: visible;
   }
 }
-@media only screen and (min-width: 421px) {
+@media only screen and (min-width: 481px) {
   .button-menu {
     display: none;
   }
@@ -32,7 +32,7 @@
 
 /*TEXT QUERIES*/
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 480px) {
   h1 {
     font-size: 2em;
     text-align: left;
