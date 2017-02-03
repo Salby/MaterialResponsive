@@ -19,12 +19,12 @@
 /*CARD QUERIES*/
 
 @media only screen and (max-width: 1200px) {
-  .card-main,
-  .card-basic {
+  .cardMain,
+  .cardBasic {
     width: 100%;
     margin: none;
   }
-  .card-row {
+  .cardRow {
     width: 100%;
     margin-left: 0%;
   }
