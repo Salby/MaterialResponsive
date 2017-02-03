@@ -15,6 +15,9 @@
   .link {
     display: none;
   }
+  nav {
+    width: 100%;
+  }
   nav ul {
     overflow: visible;
   }

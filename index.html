@@ -16,6 +16,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!--MATERIAL ICONS-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--AFFIX SCRIPT-->
+    <script src="content/js/affix.js"></script>
   </head>
   <body>
 
@@ -48,8 +50,10 @@
           </nav>
         </header>
 
-        <h1>Material Responsive Design</h1>
-        <p>This is a sample of several elements based on Google's material design language, all based on HTML5 and CSS3. It can be used as a template for future designs, or as a library of material design elements that can easily be copied on to another site.</p>
+        <article class="headerWrapper">
+          <h1>Material Responsive Design</h1>
+          <p>This is a sample of several elements based on Google's material design language, all based on HTML5 and CSS3. It can be used as a template for future designs, or as a library of material design elements that can easily be copied on to another site.</p>
+        </article>
 
       </section>
 
@@ -85,6 +89,14 @@
     </main>
 
     <script>
+
+      //AFFIX NAVBAR
+      $("nav").affix({
+        offset: {
+          top: 150,
+          bottom: 0
+        }
+      });
 
       //DRAWER ANIMATIONS
       $(document).ready(function(){
