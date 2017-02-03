@@ -1,5 +1,14 @@
 /*THIS FILE CONTAINS ALL MEDIA QUERIES FOR THE SITE*/
 
+/*WRAPPER QUERIES*/
+
+@media only screen and (max-width: 1200px) {
+  .rowWrapper {
+    width: 100%;
+    margin: none;
+  }
+}
+
 /*NAVBAR QUERIES*/
 
 @media only screen and (max-width: 480px) {

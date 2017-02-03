@@ -15,16 +15,9 @@ body {
 
 /*WRAPPERS*/
 
-.row-wrapper {
+.rowWrapper {
   width: 1200px;
   margin: auto;
-}
-
-@media only screen and (max-width: 1200px) {
-  .row-wrapper {
-    width: 100%;
-    margin: none;
-  }
 }
 
 /*CARD STYLES*/
@@ -56,7 +49,7 @@ body {
 .cardRow {
   width: 31.5%;
   padding: 0vh 0vh;
-  margin: 2vh 1.5% 2vh 0;
+  margin: 2vh 0.9% 2vh 0.9%;
   float: left;
 }
 

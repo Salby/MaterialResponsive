@@ -1,23 +1,6 @@
 /*THIS FILE CONTAINS ALL ANIMATIONS USING CSS3*/
 
-/*MOBILENAV*/
-
-@keyframes mobileNav {
-  0% {
-    opacity: 0;
-    width: 0vw;
-    height: 0px;
-    transform: translateX(-20%);
-  }
-  100% {
-    opacity: 1;
-    width: 50vw;
-    height: 129px;
-    transform: translateX(0%);
-  }
-}
-
-/*EXPERIMENTAL ANIMATIONS*/
+/*GENERAL ANIMATIONS*/
 
 @keyframes scaleIn {
   0% {
@@ -38,15 +21,6 @@
   }
   100% {
     opacity: 1;
-    transform: translateY(0%);
-  }
-}
-
-@keyframes drawerIn {
-  0% {
-    transform: translateX(-50%);
-  }
-  100% {
     transform: translateY(0%);
   }
 }
