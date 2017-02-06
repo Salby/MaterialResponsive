@@ -24,6 +24,10 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+.contentWrapper {
+  width: 35%;
+  margin: auto;
+}
 
 /*CARD STYLES*/
 

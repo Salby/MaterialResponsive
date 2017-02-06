@@ -7,6 +7,9 @@
     width: 100%;
     margin: none;
   }
+  .contentWrapper {
+    width: 100%;
+  }
 }
 
 /*NAVBAR QUERIES*/
