@@ -30,49 +30,46 @@
             <h4>Material Responsive Design</h4>
           </header>
           <ul class="modalList">
-            <li><a><i class="material-icons">home</i> Home</a></li>
-            <li><a><i class="material-icons">account_box</i> About</a></li>
-            <li><a><i class="material-icons">dashboard</i>Cases</a></li>
+            <li id="menuButtonHome"><a href="#"><i class="material-icons">home</i> Home</a></li>
+            <li><a href="#buttons"><i class="material-icons">radio_button_checked</i> Buttons</a></li>
+            <li><a href="#typography"><i class="material-icons">text_fields</i> Typography</a></li>
+            <li><a href="#animations"><i class="material-icons">view_carousel</i> Animations</a></li>
           </ul>
 	      </div>
       </div>
-
       <section class="card cardMain">
-
         <header>
           <nav>
             <ul>
               <li class="link"><a class="link-content active" href="#">HOME</a></li>
-              <li class="link"><a class="link-content" href="#">ABOUT</a></li>
-              <li class="link"><a class="link-content" href="#">CASES</a></li>
+              <li class="link"><a class="link-content" href="#buttons">BUTTONS</a></li>
+              <li class="link"><a class="link-content" href="#typography">TYPOGRAPHY</a></li>
+              <li class="link"><a class="link-content" href="#animations">ANIMATIONS</a></li>
               <a href="#openModal" class="button-menu" id="openDrawer"><i class="material-icons">menu</i></a>
             </ul>
           </nav>
         </header>
-
         <article class="headerWrapper">
           <h1>Material Responsive Design</h1>
           <p>This is a sample of several elements based on Google's material design language, all made with HTML5 and CSS3. It can be used as a template for future designs, or as a library of material design elements that can easily be copied on to another site.</p>
         </article>
-
       </section>
 
-      <section class="card cardBasic">
-
+      <section class="card cardBasic" id="buttons">
         <section class="contentWrapper">
           <h2>Buttons</h2>
           <button class="button-flat">BUTTON-FLAT</button>
           <button class="button-raised">BUTTON-RAISED</button>
           <button class="button-action"><i class="material-icons">add</i></button>
         </section>
-
       </section>
 
-      <section class="card cardBasic">
-
-        <h1>Typography</h1>
+      <section class="card cardBasic" id="typography">
+        <h2>Typography</h2>
         <img src="https://storage.googleapis.com/material-design/publish/material_v_10/assets/0Bx4BSt6jniD7SW9CUzR4MnRpOTg/style_typography_roboto1.png">
-
+      </section>
+      <section class="card cardBasic" id="animations">
+        <h2>Animations</h2>
       </section>
 
     </main>
@@ -89,7 +86,7 @@
 
       //DRAWER ANIMATIONS
       $(document).ready(function(){
-        $("#openDrawer").click(function(){
+        $("#openDrawer"),("#menuButtonHome").click(function(){
           $("#modalContent").animate({width: '80vw'}, 300);
         });
         $("#closeDrawer").click(function(){
