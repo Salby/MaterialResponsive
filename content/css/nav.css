@@ -29,7 +29,6 @@ nav ul li {
   padding: 1.3rem;
   border-bottom: solid #E91E63 2px;
   transition: all 0.3s ease 0s;
-  font-family: 'Roboto', sans-serif;
   text-decoration: none;
 }
 .link-content:hover {
@@ -89,7 +88,6 @@ nav ul li {
   margin-bottom: 1em;
 }
 .modalAction h4 {
-  font-family: 'Roboto', sans-serif;
   font-weight: 100;
   color: #ffffff;
   padding: 0.5em;
