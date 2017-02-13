@@ -182,3 +182,20 @@ img {
 i {
   transition: all 0.3s ease 0s;
 }
+
+/*AREAS*/
+
+.animateDemo {
+  background-color: rgba(0,0,0,0.05);
+  border-radius: 2px;
+  margin: 2em;
+}
+.animateDemo header {
+  background-color: rgba(0,0,0,0.05);
+  border-left: solid 0.5em ;
+}
+.animateDemo header h4 {
+  font-size: 2em;
+  font-weight: 100;
+  color: #111111;
+}
