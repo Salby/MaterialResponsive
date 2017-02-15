@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#E91E63">
     <title>MaterialResponsive</title>
+    <!--FAVICON-->
+    <link rel="icon" href="content/images/icon.png">
     <!--LOCAL CSS-->
     <link rel="stylesheet" href="content/css/main.css">
     <link rel="stylesheet" href="content/css/nav.css">
@@ -30,10 +32,10 @@
             <h4>Material Responsive Design</h4>
           </header>
           <ul class="modalList">
-            <li id="menuButtonHome"><a href="#"><i class="material-icons">home</i> Home</a></li>
-            <li><a href="#buttons"><i class="material-icons">radio_button_checked</i> Buttons</a></li>
-            <li><a href="#typography"><i class="material-icons">text_fields</i> Typography</a></li>
-            <li><a href="#animations"><i class="material-icons">view_carousel</i> Animations</a></li>
+            <li id="buttonDrawerHome"><a href="#"><i class="material-icons">home</i> Home</a></li>
+            <li id="buttonDrawerButtons"><a href="#buttons"><i class="material-icons">radio_button_checked</i> Buttons</a></li>
+            <li id="buttonDrawerTypo"><a href="#typography"><i class="material-icons">text_fields</i> Typography</a></li>
+            <li id="buttonDrawerAnimations"><a href="#animations"><i class="material-icons">view_carousel</i> Animations</a></li>
           </ul>
 	      </div>
       </div>
@@ -70,6 +72,14 @@
       </section>
       <section class="card cardBasic" id="animations">
         <h2>Animations</h2>
+        <article class="animateDemo">
+          <header>
+            <h4>open / close</h4>
+          </header>
+          <p>
+            Hello there mate
+          </p>
+        </article>
       </section>
 
     </main>
@@ -86,32 +96,29 @@
 
       //DRAWER ANIMATIONS
       $(document).ready(function(){
-        $("#openDrawer"),("#menuButtonHome").click(function(){
+        $("#openDrawer").click(function(){
           $("#modalContent").animate({width: '80vw'}, 300);
         });
         $("#closeDrawer").click(function(){
           $("#modalContent").animate({width: '0vw'}, 300);
         });
-      });
-
-      //ROW TOGGLE JQUERY
-      $(document).ready(function(){
-        $("#rowSwitch").click(function(){
-          $("#rowLeft").animate({
-            height: 'toggle',
-          });
-          $("#rowMiddle").animate({
-            height: 'toggle',
-          });
-          $("#rowRight").animate({
-            height: 'toggle',
-          });
+        $("#buttonDrawerHome").click(function(){
+          $("#modalContent").animate({width: '0vw'}, 300);
+        });
+        $("#buttonDrawerButtons").click(function(){
+          $("#modalContent").animate({width: '0vw'}, 300);
+        });
+        $("#buttonDrawerTypo").click(function(){
+          $("#modalContent").animate({width: '0vw'}, 300);
+        });
+        $("#buttonDrawerAnimations").click(function(){
+          $("#modalContent").animate({width: '0vw'}, 300);
         });
       });
 
-      //MOBILE MENU RIPPLE
+      //RIPPLE EFFECT
       var parent, ink, d, x, y;
-      $(".modalList li a").click(function(e){
+      $("li a").click(function(e){
   	  parent = $(this).parent();
   	  //create .ink element if it doesn't exist
   	  if(parent.find(".ink").length == 0)
@@ -138,34 +145,6 @@
   	  ink.css({top: y+'px', left: x+'px'}).addClass("animate");
       })
 
-      //DESKTOP RIPPLE
-      var parent, ink, d, x, y;
-      $(".link-content").click(function(e){
-  	  parent = $(this).parent();
-  	  //create .ink element if it doesn't exist
-  	  if(parent.find(".ink").length == 0)
-  		parent.prepend("<span class='ink'></span>");
-
-  	  ink = parent.find(".ink");
-  	  //incase of quick double clicks stop the previous animation
-  	  ink.removeClass("animate");
-
-  	  //set size of .ink
-  	  if(!ink.height() && !ink.width())
-  	  {
-  		//use parent's width or height whichever is larger for the diameter to make a circle which can cover the entire element.
-  		d = Math.max(parent.outerWidth(), parent.outerHeight());
-  		ink.css({height: d, width: d});
-  	  }
-
-  	  //get click coordinates
-  	  //logic = click coordinates relative to page - parent's position relative to page - half of self height/width to make it controllable from the center;
-  	  x = e.pageX - parent.offset().left - ink.width()/2;
-  	  y = e.pageY - parent.offset().top - ink.height()/2;
-
-  	  //set the position and add class .animate
-  	  ink.css({top: y+'px', left: x+'px'}).addClass("animate");
-      })
     </script>
 
   </body>

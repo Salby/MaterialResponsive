@@ -1,3 +1,3 @@
 # MATERIAL DESIGN RESPONSIVE SHOWCASE
 
-THIS IS A GENERIC COLLECTION OF HTML ELEMENTS BASED ON GOOGLE'S MATERIAL DESIGN
+This is a generic collection of HTML elements based on Google's Material Design philosophy
